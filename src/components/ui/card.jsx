@@ -1,0 +1,9 @@
+import React from 'react'
+
+export function Card({ className = '', children }) {
+  return <div className={`rounded-2xl border border-gray-200 bg-white ${className}`}>{children}</div>
+}
+
+export function CardContent({ className = '', children }) {
+  return <div className={`p-6 ${className}`}>{children}</div>
+}

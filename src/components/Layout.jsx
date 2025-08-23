@@ -11,7 +11,7 @@ export default function Layout() {
             <NavLink to="/work" className={({isActive}) => isActive ? 'font-semibold' : 'text-gray-600 hover:text-gray-900'}>Work</NavLink>
             <NavLink to="/about" className={({isActive}) => isActive ? 'font-semibold' : 'text-gray-600 hover:text-gray-900'}>About</NavLink>
             <NavLink to="/resume" className={({isActive}) => isActive ? 'font-semibold' : 'text-gray-600 hover:text-gray-900'}>Resume</NavLink>
-            <a href="mailto:mattgmitch@gmail.com" className="text-gray-600 hover:text-gray-900">Contact</a>
+            <NavLink to="/contact" className={({isActive}) => isActive ? 'font-semibold' : 'text-gray-600 hover:text-gray-900'}>Contact</NavLink>
           </nav>
         </div>
       </header>

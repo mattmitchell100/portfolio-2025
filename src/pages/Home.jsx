@@ -19,12 +19,12 @@ export default function Home() {
           Lead UX Designer with 18+ years crafting user-centered, responsive, and impactful digital experiences.
         </motion.p>
         <div className="flex gap-4">
-          <a href="#" className="inline-flex items-center gap-2 rounded-2xl px-4 py-2 bg-white text-indigo-600 font-medium hover:bg-gray-100">
+          <Link to="/resume" className="inline-flex items-center gap-2 rounded-2xl px-4 py-2 bg-white text-indigo-600 font-medium hover:bg-gray-100">
             <FileText size={18}/> View Resume
-          </a>
-          <a href="mailto:mattgmitch@gmail.com" className="inline-flex items-center gap-2 rounded-2xl px-4 py-2 bg-indigo-700 hover:bg-indigo-800 text-white">
-            <Mail size={18}/> Contact Me
-          </a>
+          </Link>
+          <Link to="/contact" className="inline-flex items-center gap-2 rounded-2xl px-4 py-2 bg-indigo-700 hover:bg-indigo-800 text-white">
+            <FileText size={18}/> Contact Me
+          </Link>
         </div>
       </section>
 

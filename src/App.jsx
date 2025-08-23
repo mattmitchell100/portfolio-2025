@@ -6,6 +6,7 @@ import Work from './pages/Work.jsx'
 import CaseStudy from './pages/CaseStudy.jsx'
 import About from './pages/About.jsx'
 import Resume from './pages/Resume.jsx'
+import Contact from './pages/Contact.jsx'
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="/case/:slug" element={<CaseStudy />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<div className="p-10">Not found</div>} />
         </Route>
       </Routes>

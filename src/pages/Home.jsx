@@ -36,7 +36,7 @@ export default function Home() {
             <Link key={cs.slug} to={`/case/${cs.slug}`} className="block">
               <div className="rounded-2xl border bg-white shadow hover:shadow-lg transition">
                 <div className="p-6">
-                  <div className="h-40 rounded-xl mb-4 bg-gray-200 flex items-center justify-center text-gray-500 text-sm">{cs.thumb || 'Image'}</div>
+                  <div className="h-40 rounded-xl mb-4 bg-gray-200 flex items-center justify-center text-gray-500 text-sm"><img src={cs.image} alt={cs.title} className="object-cover h-full w-full" /></div>
                   <h3 className="text-xl font-semibold mb-2">{cs.title}</h3>
                   <p className="text-sm text-gray-600 mb-4">{cs.summary}</p>
                   <div className="inline-flex text-sm underline">View Case Study</div>

@@ -22,7 +22,7 @@ export default function CaseStudy() {
       <p className="!mt-0 text-gray-600">{cs.role} • {cs.year}</p>
 
       <div className="not-prose my-8 rounded-2xl overflow-hidden border">
-        <div className="h-64 bg-gray-200 flex items-center justify-center text-gray-500">Hero Image</div>
+        <div className="h-64 bg-gray-200 flex items-center justify-center text-gray-500"><img src={cs.image} alt={cs.title} className="object-cover h-full w-full" /></div>
       </div>
 
       <h2>Context</h2>

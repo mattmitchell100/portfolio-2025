@@ -6,7 +6,14 @@ export default function About() {
       <h1 className="text-3xl font-bold mb-6">About</h1>
 
       <p className="text-lg text-gray-700 mb-8">
-        Short intro about you. What you do, how you work, what you care about.
+        Hi, I’m Matt — a UX designer who’s been crafting digital experiences for nearly two decades. I’ve always believed design is less about pixels and more about people. That belief has guided me from my early days building e-commerce platforms to my current role leading a team of designers at Beck’s, where I get to mentor, collaborate, and help shape products that actually make a difference.
+      </p>
+      <p className="text-lg text-gray-700 mb-8">
+        {/* Over the years, I’ve honed a design approach that’s equal parts user-centered research and iterative prototyping. I thrive on collaboration, whether it’s with cross-functional teams or directly with users, to uncover insights that drive impactful design solutions. */}
+        I love digging into complex problems, untangling them, and finding elegant, intuitive solutions. Over the years I’ve worked across industries — from education and healthcare to finance and agriculture — and each challenge has reinforced one simple truth: great design happens when you listen first.
+      </p>
+      <p className="text-lg text-gray-700 mb-8">
+        Outside of work, I’m usually biking or exploring new tech. Whether on the screen or off, I’m always curious, always learning, and always chasing the next way to make something just a little bit better.
       </p>
 
       <div className="grid sm:grid-cols-2 gap-6">

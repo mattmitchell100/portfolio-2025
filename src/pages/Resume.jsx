@@ -16,42 +16,41 @@ export default function Resume() {
       </style>
       <section className="py-16 px-6 max-w-3xl mx-auto">
         <div className="flex items-start justify-between gap-4 mb-6">
-          <div>
+          <div className="flex-1 w-full sm:w-auto">
             <h1 className="text-3xl font-bold">Matthew G Mitchell</h1>
-            <p className="text-gray-700">
+            <div className="text-gray-700">
               <a className="underline underline-offset-2" href="mailto:mattgmitch@gmail.com">mattgmitch@gmail.com</a>
               {' '}·{' '}
               <a className="underline underline-offset-2" href="tel:+15082607224">508 260 7224</a>
-              {' '}·{' '}
-              <a className="underline underline-offset-2" href="https://www.mattgmitchell.com" target="_blank" rel="noreferrer">www.mattgmitchell.com</a>
-            </p>
+              {/* {' '}·{' '} */}
+              {/* <a className="underline underline-offset-2" href="https://www.mattgmitchell.com" target="_blank" rel="noreferrer">www.mattgmitchell.com</a> */}
+            </div>
           </div>
+        </div>
 
-          {/* Actions: print + download */}
-          <div className="shrink-0 flex items-center gap-2 print:hidden" aria-label="Resume actions">
-            <button
-              type="button"
-              onClick={() => window.print()}
-              title="Print"
-              aria-label="Print resume"
-              className="inline-flex items-center gap-2 rounded-xl border px-3 py-2 hover:bg-gray-50"
-            >
-              {/* Printer icon */}
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5"><path d="M6 7V3h12v4H6zm0 10v4h12v-4H6zm-2-1h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2zm2-7h12v3H4V9h2z"/></svg>
-              <span className="text-sm">Print</span>
-            </button>
-            <a
-              href={pdfHref}
-              title="Download PDF"
-              aria-label="Download resume PDF"
-              className="inline-flex items-center gap-2 rounded-xl border px-3 py-2 hover:bg-gray-50"
-              download
-            >
-              {/* Download icon */}
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5"><path d="M12 3v10.586l3.293-3.293 1.414 1.414L12 17.414l-4.707-4.707 1.414-1.414L11 13.586V3h1zM5 19h14v2H5z"/></svg>
-              <span className="text-sm">PDF</span>
-            </a>
-          </div>
+        <div className="mt-4 mb-4 sm:mt-0 flex items-center gap-2 print:hidden" aria-label="Resume actions">
+          <button
+            type="button"
+            onClick={() => window.print()}
+            title="Print"
+            aria-label="Print resume"
+            className="inline-flex items-center gap-2 rounded-xl border px-3 py-2 hover:bg-gray-50"
+          >
+            {/* Printer icon */}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5"><path d="M6 7V3h12v4H6zm0 10v4h12v-4H6zm-2-1h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2zm2-7h12v3H4V9h2z"/></svg>
+            <span className="text-sm">Print</span>
+          </button>
+          <a
+            href={pdfHref}
+            title="Download PDF"
+            aria-label="Download resume PDF"
+            className="inline-flex items-center gap-2 rounded-xl border px-3 py-2 hover:bg-gray-50"
+            download
+          >
+            {/* Download icon */}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5"><path d="M12 3v10.586l3.293-3.293 1.414 1.414L12 17.414l-4.707-4.707 1.414-1.414L11 13.586V3h1zM5 19h14v2H5z"/></svg>
+            <span className="text-sm">PDF</span>
+          </a>
         </div>
 
         {/* Summary */}

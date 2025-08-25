@@ -11,7 +11,7 @@ export default function About() {
         alt="Matt"
         className="rounded-full shadow-lg w-40 h-40 md:w-48 md:h-48 mx-auto mb-8"
       />
-      <div className="max-w-2xl mx-auto mb-12 text-center md:text-left">
+      <div className="max-w-2xl mx-auto mb-12 md:text-left">
         <p className="text-lg text-gray-700 mb-8">
           Hi, I’m Matt, a UX designer who’s been crafting digital experiences for nearly two decades. I’ve always believed design is less about pixels and more about people. That belief has guided me from my early days building e-commerce platforms to my current role leading a team of designers at Beck’s, where I get to mentor, collaborate, and help shape products that actually make a difference.
         </p>

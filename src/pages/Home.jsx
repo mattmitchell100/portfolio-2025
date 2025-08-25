@@ -29,7 +29,7 @@ export default function Home() {
       </section>
 
       {/* Featured Work Section */}
-      <section className="py-20 px-6 max-w-6xl mx-auto">
+      {/* <section className="py-20 px-6 max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12">Featured Work</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {featured.map((cs) => (
@@ -45,7 +45,7 @@ export default function Home() {
             </Link>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* About Section */}
       <section className="bg-white py-20 px-6">

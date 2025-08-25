@@ -8,7 +8,7 @@ export default function Layout() {
         <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
           <Link to="/" className="font-bold">Matt Mitchell</Link>
           <nav className="flex gap-6 text-sm">
-            <NavLink to="/work" className={({isActive}) => isActive ? 'font-semibold' : 'text-gray-600 hover:text-gray-900'}>Work</NavLink>
+            {/* <NavLink to="/work" className={({isActive}) => isActive ? 'font-semibold' : 'text-gray-600 hover:text-gray-900'}>Work</NavLink> */}
             <NavLink to="/about" className={({isActive}) => isActive ? 'font-semibold' : 'text-gray-600 hover:text-gray-900'}>About</NavLink>
             <NavLink to="/resume" className={({isActive}) => isActive ? 'font-semibold' : 'text-gray-600 hover:text-gray-900'}>Resume</NavLink>
             <NavLink to="/contact" className={({isActive}) => isActive ? 'font-semibold' : 'text-gray-600 hover:text-gray-900'}>Contact</NavLink>

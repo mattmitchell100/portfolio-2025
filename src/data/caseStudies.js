@@ -4,11 +4,11 @@ import beckDesignSystemImg from '../assets/case-studies/beck-design-system.png'
 
 const caseStudies = [
   {
-    slug: 'pearson-store-responsive',
-    title: 'MyPearsonStore Responsive Redesign',
-    year: '2014',
+    slug: 'responsive-redesign',
+    title: 'Responsive Redesign',
+    year: '2012',
     role: 'Lead UI Designer & UI Developer',
-    summary: 'Responsive redesign that drove record-breaking sales the quarter after launch.',
+    summary: 'Responsive redesign, record-breaking results.',
     responsibilities: [
       'Led responsive UI design and front-end development',
       'Partnered with product and engineering across 15+ properties',
@@ -20,7 +20,8 @@ const caseStudies = [
       'Standardized components across eCommerce platforms',
       'Improved mobile conversion and page speed'
     ],
-    image: pearsonStoreImg
+    image: pearsonStoreImg,
+    featured: true,
   },
   {
     slug: 'provider-portal-redesign',
@@ -39,12 +40,13 @@ const caseStudies = [
       'Improved accessibility and device support',
       'Reduced implementation time for new clients'
     ],
-    image: providerPortalImg
+    image: providerPortalImg,
+    featured: true,
   },
   {
     slug: 'beck-design-system',
     title: 'Design System for Internal & Customer Apps',
-    year: '2024–2025',
+    year: '2025',
     role: 'Lead UX Designer',
     summary: 'Established and maintained a Figma design system to streamline delivery across teams.',
     responsibilities: [
@@ -58,46 +60,49 @@ const caseStudies = [
       'Consistent UX across surfaces',
       'Clear governance and contribution workflow'
     ],
-    image: beckDesignSystemImg
+    image: beckDesignSystemImg,
+    featured: true,
   },
-  {
-    slug: 'provider-portal-redesign',
-    title: 'Healthcare Provider Portal Redesign',
-    year: '2017',
-    role: 'UI Designer & Front-End Developer',
-    summary: 'First fully-responsive member portal and redesigned provider experience.',
-    responsibilities: [
-      'Defined requirements with PM and stakeholders',
-      'Built responsive layouts with accessibility baked in',
-      'Implemented client-side validation for Medicare registration'
-    ],
-    process: 'Stakeholder workshops, wireframes, design specs, and production-ready CSS/JS with accessibility checks.',
-    outcomes: [
-      'Faster task completion for providers',
-      'Improved accessibility and device support',
-      'Reduced implementation time for new clients'
-    ],
-    image: providerPortalImg
-  },
-  {
-    slug: 'provider-portal-redesign',
-    title: 'Healthcare Provider Portal Redesign',
-    year: '2017',
-    role: 'UI Designer & Front-End Developer',
-    summary: 'First fully-responsive member portal and redesigned provider experience.',
-    responsibilities: [
-      'Defined requirements with PM and stakeholders',
-      'Built responsive layouts with accessibility baked in',
-      'Implemented client-side validation for Medicare registration'
-    ],
-    process: 'Stakeholder workshops, wireframes, design specs, and production-ready CSS/JS with accessibility checks.',
-    outcomes: [
-      'Faster task completion for providers',
-      'Improved accessibility and device support',
-      'Reduced implementation time for new clients'
-    ],
-    image: providerPortalImg
-  }
+    {
+      slug: 'provider-portal-redesign',
+      title: 'Healthcare Provider Portal Redesign',
+      year: '2017',
+      role: 'UI Designer & Front-End Developer',
+      summary: 'First fully-responsive member portal and redesigned provider experience.',
+      responsibilities: [
+        'Defined requirements with PM and stakeholders',
+        'Built responsive layouts with accessibility baked in',
+        'Implemented client-side validation for Medicare registration'
+      ],
+      process: 'Stakeholder workshops, wireframes, design specs, and production-ready CSS/JS with accessibility checks.',
+      outcomes: [
+        'Faster task completion for providers',
+        'Improved accessibility and device support',
+        'Reduced implementation time for new clients'
+      ],
+      image: providerPortalImg,
+      featured: false,
+    },
+    {
+      slug: 'beck-design-system',
+      title: 'Design System for Internal & Customer Apps',
+      year: '2025',
+      role: 'Lead UX Designer',
+      summary: 'Established and maintained a Figma design system to streamline delivery across teams.',
+      responsibilities: [
+        'Mentored junior designers and drove consistency',
+        'Set up tokens, components, and usage guidelines',
+        'Partnered with dev leads on UI kit parity'
+      ],
+      process: 'Component inventory, theming strategy, contribution model, and documentation with examples.',
+      outcomes: [
+        'Higher delivery velocity across squads',
+        'Consistent UX across surfaces',
+        'Clear governance and contribution workflow'
+      ],
+      image: beckDesignSystemImg,
+      featured: false,
+    }
 ]
 
 export default caseStudies

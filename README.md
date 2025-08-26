@@ -16,7 +16,10 @@ npm install
 # 2) Start dev server
 npm run dev
 
-# 3) Build for production
+# 3) Open new terminal, start API
+npx vercel dev
+
+# 4) Build for production
 npm run build
 npm run preview
 ```

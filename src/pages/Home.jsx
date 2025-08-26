@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 import caseStudies from '../data/caseStudies.js'
 
 export default function Home() {
-  const featured = caseStudies.slice(0, 3)
+  const featured = caseStudies.filter(cs => cs.featured)
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
       {/* Hero Section */}
@@ -33,9 +33,9 @@ export default function Home() {
         <h2 className="text-3xl font-bold text-center mb-12">Featured Work</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {featured.map((cs) => (
-            <Link key={cs.slug} to={`/case/${cs.slug}`} className="block">
-              <div className="rounded-2xl border bg-white shadow hover:shadow-lg transition">
-                <div className="p-6">
+            <Link key={cs.slug} to={`/case/${cs.slug}`} className="block h-96">
+              <div className="h-full flex flex-col rounded-2xl border bg-white shadow hover:shadow-lg transition">
+                <div className="p-6 flex-1 flex flex-col">
                   <div className="h-40 rounded-xl mb-4 bg-gray-200 flex items-center justify-center text-gray-500 text-sm"><img src={cs.image} alt={cs.title} className="object-cover h-full w-full" /></div>
                   <h3 className="text-xl font-semibold mb-2">{cs.title}</h3>
                   <p className="text-sm text-gray-600 mb-4">{cs.summary}</p>

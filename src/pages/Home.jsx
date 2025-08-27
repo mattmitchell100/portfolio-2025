@@ -49,9 +49,9 @@ export default function Home() {
             </Link>
           ))}
         </div>
-      </section> */}
+      </section>
 
-      <section className="py-20 px-6 max-w-5xl mx-auto">
+      {/* <section className="py-20 px-6 max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold text-left md:text-center mb-10">Featured Work</h2>
         <div className="flex flex-col items-start md:items-center justify-center text-left md:text-center rounded-2xl border border-dashed bg-white/70 px-8 py-12">
           <div className="text-sm mb-3 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 font-medium">🚧 Updating</div>
@@ -64,7 +64,7 @@ export default function Home() {
             <Link to="/contact" className="rounded-full border text-sm font-medium px-4 py-2 hover:bg-gray-100 transition">Get in Touch</Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* About Section */}
     <section className="bg-white dark:bg-slate-800 py-20 px-6 border-t border-b border-transparent dark:border-slate-700/50">
@@ -73,7 +73,7 @@ export default function Home() {
       <p className="text-lg text-gray-700 dark:text-slate-300 leading-relaxed">
             I design intuitive, accessible digital products that solve real problems. I balance creative vision with technical execution and have led work across e‑commerce, healthcare, and agriculture.
           </p>
-          <div className="flex flex-wrap gap-4 justify-start md:justify-center mt-6">
+          <div className="flex flex-wrap gap-4 justify-start justify-center mt-6">
             <Link to="/about" className="rounded-full bg-indigo-600 text-white text-sm font-medium px-5 py-2 hover:bg-indigo-700 transition">My Story</Link>
           </div>
         </div>

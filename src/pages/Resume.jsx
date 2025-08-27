@@ -106,7 +106,7 @@ export default function Resume() {
 
           <article className="mb-6">
             <header className="flex flex-wrap items-baseline justify-between gap-2">
-              <h3 className="font-semibold">Automotive Finance Corporation (AFC)</h3>
+              <h3 className="font-semibold">KAR Global (AFC)</h3>
               <span className="text-sm text-gray-600 dark:text-slate-400">2018 – 2020</span>
             </header>
             <p className="italic text-gray-700 dark:text-slate-300">UI/UX Designer · Front-End Developer</p>

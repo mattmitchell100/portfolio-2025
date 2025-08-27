@@ -48,28 +48,28 @@ export default function Home() {
       </section> */}
 
       <section className="py-20 px-6 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-10">Featured Work</h2>
-        <div className="flex flex-col items-center justify-center text-center rounded-2xl border border-dashed bg-white/70 px-8 py-24">
+        <h2 className="text-3xl font-bold text-left md:text-center mb-10">Featured Work</h2>
+        <div className="flex flex-col items-start md:items-center justify-center text-left md:text-center rounded-2xl border border-dashed bg-white/70 px-8 py-12">
           <div className="text-sm mb-3 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 font-medium">🚧 Updating</div>
           <h3 className="text-2xl font-semibold mb-4 max-w-2xl">I&apos;m polishing new featured case studies.</h3>
           <p className="text-gray-600 max-w-2xl leading-relaxed mb-6">
             I&apos;m curating a more recent set of stories that better highlight strategy, systems thinking, and measurable outcomes. They&apos;ll be live soon but feel free to explore my resume or reach out directly in the meantime.
           </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/resume" className="rounded-full bg-indigo-600 text-white text-sm font-medium px-5 py-2 hover:bg-indigo-700 transition">View Resume</Link>
-            <Link to="/contact" className="rounded-full border text-sm font-medium px-5 py-2 hover:bg-gray-100 transition">Get in Touch</Link>
+          <div className="flex flex-wrap gap-4 justify-start md:justify-center">
+            <Link to="/resume" className="rounded-full bg-indigo-600 text-white text-sm font-medium px-4 py-2 hover:bg-indigo-700 transition">View Resume</Link>
+            <Link to="/contact" className="rounded-full border text-sm font-medium px-4 py-2 hover:bg-gray-100 transition">Get in Touch</Link>
           </div>
         </div>
       </section>
 
       {/* About Section */}
-      <section className="bg-white py-20 px-6">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="bg-white py-12 px-6">
+        <div className="max-w-4xl mx-auto text-left md:text-center">
           <h2 className="text-3xl font-bold mb-6">About Me</h2>
           <p className="text-lg text-gray-700 leading-relaxed">
             I design intuitive, accessible digital products that solve real problems. I balance creative vision with technical execution and have led work across e‑commerce, healthcare, and agriculture.
           </p>
-          <div className="flex flex-wrap gap-4 justify-center mt-6">
+          <div className="flex flex-wrap gap-4 justify-start md:justify-center mt-6">
             <Link to="/about" className="rounded-full bg-indigo-600 text-white text-sm font-medium px-5 py-2 hover:bg-indigo-700 transition">My Story</Link>
           </div>
         </div>

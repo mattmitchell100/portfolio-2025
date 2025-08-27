@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { LinkedinIcon, EmailIcon } from '../components/ui/icons.jsx'
+import { LinkedinIcon, EmailIcon } from '../components/ui/icons.jsx'
 
 export default function Contact() {
   const [status, setStatus] = useState({ ok: null, msg: '' })

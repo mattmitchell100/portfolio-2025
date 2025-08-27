@@ -15,11 +15,11 @@ export default function Resume() {
           }
         `}
       </style>
-      <section className="py-16 px-6 max-w-3xl mx-auto">
+  <section className="py-16 px-6 max-w-3xl mx-auto text-slate-900 dark:text-slate-100">
         <div className="flex items-start justify-between gap-4 mb-6">
           <div className="flex-1 w-full sm:w-auto">
             <h1 className="text-3xl font-bold">Matthew G Mitchell</h1>
-            <div className="text-gray-700">
+            <div className="text-gray-700 dark:text-slate-300">
               <a className="underline underline-offset-2" href="mailto:mattgmitch@gmail.com">mattgmitch@gmail.com</a>
               {' '}·{' '}
               <a className="underline underline-offset-2" href="tel:+15082607224">508 260 7224</a>
@@ -65,7 +65,7 @@ export default function Resume() {
         {/* Areas of Experience */}
         <section className="mb-6">
           <h2 className="text-xl font-semibold mb-2">Areas of Experience</h2>
-          <ul className="list-disc pl-5 text-gray-700 grid gap-1 sm:grid-cols-2">
+          <ul className="list-disc pl-5 text-gray-700 dark:text-slate-300 grid gap-1 sm:grid-cols-2">
             <li>Design systems and component libraries</li>
             <li>Responsive UI design and prototyping</li>
             <li>Accessibility and usability best practices</li>
@@ -80,7 +80,7 @@ export default function Resume() {
         {/* Career Highlights */}
         <section className="mb-6">
           <h2 className="text-xl font-semibold mb-2">Career Highlights</h2>
-          <ul className="list-disc pl-5 text-gray-700 space-y-1">
+          <ul className="list-disc pl-5 text-gray-700 dark:text-slate-300 space-y-1">
             <li>Led a major responsive redesign for MyPearsonStore.com, resulting in record sales growth.</li>
             <li>Developed and standardized UI best practices across 15+ eCommerce platforms using pattern libraries.</li>
             <li>Introduced responsive design and modern UI tooling across multiple organizations.</li>
@@ -94,10 +94,10 @@ export default function Resume() {
           <article className="mb-6">
             <header className="flex flex-wrap items-baseline justify-between gap-2">
               <h3 className="font-semibold">Beck’s Hybrids</h3>
-              <span className="text-sm text-gray-600">2020 – Present</span>
+              <span className="text-sm text-gray-600 dark:text-slate-400">2020 – Present</span>
             </header>
-            <p className="italic text-gray-700">Lead UX Designer (promoted from Sr. UX in 2024)</p>
-            <ul className="list-disc pl-5 text-gray-700 space-y-1 mt-2">
+            <p className="italic text-gray-700 dark:text-slate-300">Lead UX Designer (promoted from Sr. UX in 2024)</p>
+            <ul className="list-disc pl-5 text-gray-700 dark:text-slate-300 space-y-1 mt-2">
               <li>Lead designer on a 7-person UX team; partner with PMs, engineers, and stakeholders to shape roadmaps.</li>
               <li>Established and maintain a Figma-based design system used across customer and internal apps.</li>
               <li>Mentor junior designers; improved team efficiency and quality through workflows and critique.</li>
@@ -107,10 +107,10 @@ export default function Resume() {
           <article className="mb-6">
             <header className="flex flex-wrap items-baseline justify-between gap-2">
               <h3 className="font-semibold">Automotive Finance Corporation (AFC)</h3>
-              <span className="text-sm text-gray-600">2018 – 2020</span>
+              <span className="text-sm text-gray-600 dark:text-slate-400">2018 – 2020</span>
             </header>
-            <p className="italic text-gray-700">UI/UX Designer · Front-End Developer</p>
-            <ul className="list-disc pl-5 text-gray-700 space-y-1 mt-2">
+            <p className="italic text-gray-700 dark:text-slate-300">UI/UX Designer · Front-End Developer</p>
+            <ul className="list-disc pl-5 text-gray-700 dark:text-slate-300 space-y-1 mt-2">
               <li>Senior design lead for multiple customer-facing products; drove clickable prototypes for stakeholder buy-in.</li>
               <li>Created and maintained a UI pattern library to accelerate delivery and standardize UX.</li>
               <li>Partnered with engineering to ensure designs shipped as intended; provided production-ready HTML/CSS/JS.</li>
@@ -120,10 +120,10 @@ export default function Resume() {
           <article className="mb-6">
             <header className="flex flex-wrap items-baseline justify-between gap-2">
               <h3 className="font-semibold">Healthx</h3>
-              <span className="text-sm text-gray-600">2015 – 2018</span>
+              <span className="text-sm text-gray-600 dark:text-slate-400">2015 – 2018</span>
             </header>
-            <p className="italic text-gray-700">UI Designer · Front-End Developer</p>
-            <ul className="list-disc pl-5 text-gray-700 space-y-1 mt-2">
+            <p className="italic text-gray-700 dark:text-slate-300">UI Designer · Front-End Developer</p>
+            <ul className="list-disc pl-5 text-gray-700 dark:text-slate-300 space-y-1 mt-2">
               <li>Implemented the company’s first responsive member portal; led provider portal redesign.</li>
               <li>Managed Android/iOS app submissions; improved team UI workflow and documentation.</li>
               <li>Led UI for CA Senate Bill-137 provider attestation and Medicare registration (heavy client-side validation).</li>
@@ -133,10 +133,10 @@ export default function Resume() {
           <article className="mb-2">
             <header className="flex flex-wrap items-baseline justify-between gap-2">
               <h3 className="font-semibold">Pearson</h3>
-              <span className="text-sm text-gray-600">2007 – 2015</span>
+              <span className="text-sm text-gray-600 dark:text-slate-400">2007 – 2015</span>
             </header>
-            <p className="italic text-gray-700">UI Designer · Front-End Developer</p>
-            <ul className="list-disc pl-5 text-gray-700 space-y-1 mt-2">
+            <p className="italic text-gray-700 dark:text-slate-300">UI Designer · Front-End Developer</p>
+            <ul className="list-disc pl-5 text-gray-700 dark:text-slate-300 space-y-1 mt-2">
               <li>Prototyped concepts for UX testing and documentation; supported 15+ eCommerce platforms.</li>
               <li>Rolled out responsive design across new and existing projects; built CMS templates for marketing teams.</li>
               <li>Collaborated in Agile/SAFe environments; contributed to strategy and key product decisions.</li>
@@ -147,7 +147,7 @@ export default function Resume() {
         {/* Education */}
         <section className="mb-10">
           <h2 className="text-xl font-semibold mb-2">Education</h2>
-          <ul className="text-gray-700 space-y-1">
+          <ul className="text-gray-700 dark:text-slate-300 space-y-1">
             <li>
               <span className="font-medium">BS, New Media Arts & Sciences</span> — Indiana University (2007)
             </li>

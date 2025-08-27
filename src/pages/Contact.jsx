@@ -48,23 +48,23 @@ export default function Contact() {
   }
 
   return (
-    <div className="min-h-screen bg-white py-20 px-6">
+  <div className="min-h-screen bg-white dark:bg-slate-900 py-20 px-6 text-slate-900 dark:text-slate-100">
       <div className="max-w-xl mx-auto">
         <h1 className="text-3xl font-bold mb-6">Contact</h1>
-        <p className="text-gray-600 mb-8">Have a project or question? I’ll get back to you soon.</p>
+  <p className="text-gray-600 dark:text-slate-400 mb-8">Have a project or question? I’ll get back to you soon.</p>
         <div className="flex gap-4 mb-8">
           <a
             href="https://www.linkedin.com/in/matt-mitchell-3518993"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-indigo-50 text-indigo-700 font-medium hover:bg-indigo-100 transition shadow"
+            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-indigo-50 text-indigo-700 dark:bg-indigo-600/20 dark:text-indigo-300 font-medium hover:bg-indigo-100 dark:hover:bg-indigo-600/30 transition shadow"
           >
             <LinkedinIcon className="w-5 h-5" />
             LinkedIn
           </a>
           <a
             href="mailto:mattgmitch@gmail.com"
-            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-indigo-50 text-indigo-700 font-medium hover:bg-indigo-100 transition shadow"
+            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-indigo-50 text-indigo-700 dark:bg-indigo-600/20 dark:text-indigo-300 font-medium hover:bg-indigo-100 dark:hover:bg-indigo-600/30 transition shadow"
           >
             <EmailIcon className="w-5 h-5" />
             Email
@@ -81,17 +81,17 @@ export default function Contact() {
 
           <div>
             <label className="block text-sm font-medium mb-1">Name</label>
-            <input name="name" required className="w-full border rounded-lg px-3 py-2" />
+            <input name="name" required className="w-full border rounded-lg px-3 py-2 bg-white dark:bg-slate-800 border-gray-300 dark:border-slate-600 text-slate-900 dark:text-slate-100" />
           </div>
 
           <div>
             <label className="block text-sm font-medium mb-1">Email</label>
-            <input name="email" type="email" required className="w-full border rounded-lg px-3 py-2" />
+            <input name="email" type="email" required className="w-full border rounded-lg px-3 py-2 bg-white dark:bg-slate-800 border-gray-300 dark:border-slate-600 text-slate-900 dark:text-slate-100" />
           </div>
 
           <div>
             <label className="block text-sm font-medium mb-1">Message</label>
-            <textarea name="message" rows="5" required className="w-full border rounded-lg px-3 py-2" />
+            <textarea name="message" rows="5" required className="w-full border rounded-lg px-3 py-2 bg-white dark:bg-slate-800 border-gray-300 dark:border-slate-600 text-slate-900 dark:text-slate-100" />
           </div>
 
           <div 
@@ -102,7 +102,7 @@ export default function Contact() {
             data-action="contact">
           </div>
 
-          <button type="submit" disabled={submitting} className={`rounded-2xl px-4 py-2 text-white hover:bg-indigo-700 ${submitting ? 'bg-indigo-400 cursor-not-allowed' : 'bg-indigo-600'}`}>
+          <button type="submit" disabled={submitting} className={`rounded-2xl px-4 py-2 text-white hover:bg-indigo-700 dark:hover:bg-indigo-500 ${submitting ? 'bg-indigo-400 dark:bg-indigo-400/60 cursor-not-allowed' : 'bg-indigo-600 dark:bg-indigo-500'}`}>
             {submitting ? 'Sending…' : 'Send'}
           </button>
 

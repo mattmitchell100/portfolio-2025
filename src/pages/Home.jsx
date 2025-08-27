@@ -28,8 +28,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Work Section */}
-      {/* <section className="py-20 px-6 max-w-6xl mx-auto">
+      {/* Featured Work Section (temporarily replaced with placeholder)
+      <section className="py-20 px-6 max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12">Featured Work</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {featured.map((cs) => (
@@ -46,6 +46,21 @@ export default function Home() {
           ))}
         </div>
       </section> */}
+
+      <section className="py-20 px-6 max-w-5xl mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-10">Featured Work</h2>
+        <div className="flex flex-col items-center justify-center text-center rounded-2xl border border-dashed bg-white/70 px-8 py-24">
+          <div className="text-sm mb-3 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 font-medium">🚧 Updating</div>
+          <h3 className="text-2xl font-semibold mb-4 max-w-2xl">I&apos;m polishing new featured case studies.</h3>
+          <p className="text-gray-600 max-w-2xl leading-relaxed mb-6">
+            I&apos;m curating a more recent set of stories that better highlight strategy, systems thinking, and measurable outcomes. They&apos;ll be live soon but feel free to explore my resume or reach out directly in the meantime.
+          </p>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Link to="/resume" className="rounded-full bg-indigo-600 text-white text-sm font-medium px-5 py-2 hover:bg-indigo-700 transition">View Resume</Link>
+            <Link to="/contact" className="rounded-full border text-sm font-medium px-5 py-2 hover:bg-gray-100 transition">Get in Touch</Link>
+          </div>
+        </div>
+      </section>
 
       {/* About Section */}
       <section className="bg-white py-20 px-6">

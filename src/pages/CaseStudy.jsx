@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import caseStudies from '../data/caseStudies.js'
 import { Card, CardContent } from '../components/ui/card.jsx'
+import Modal from '../components/ui/modal.jsx'
 
 export default function CaseStudy() {
+  const [modalOpen, setModalOpen] = useState(false)
   const { slug } = useParams()
   const cs = caseStudies.find(c => c.slug === slug)
 
@@ -27,14 +29,32 @@ export default function CaseStudy() {
         <Link to="/work" className="inline-flex items-center gap-1 text-sm text-indigo-600 hover:underline">← All work</Link>
       </div>
       <Card className="w-full mb-8 shadow">
-        <div className="h-64 rounded-2xl overflow-hidden bg-gray-100 flex items-center justify-center">
-          <img src={cs.image} alt={cs.title} className="object-cover h-full w-full" />
+        <div className="h-64 rounded-2xl overflow-hidden bg-gray-100 flex items-center justify-center cursor-pointer" onClick={() => setModalOpen(true)}>
+          <img src={cs.image} alt={cs.title} className="object-cover h-full w-full transition-transform duration-200 hover:scale-105" />
         </div>
         <CardContent>
           <h1 className="text-4xl font-bold mb-2">{cs.title}</h1>
           <p className="text-lg text-gray-500 mb-2">{cs.role} • {cs.year}</p>
+          {cs.figma && (
+            <a
+              href={cs.figma}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-4 px-4 py-2 bg-indigo-50 text-indigo-700 rounded-lg font-medium hover:bg-indigo-100 transition"
+            >
+              View Figma File
+            </a>
+          )}
         </CardContent>
       </Card>
+      <Modal isOpen={modalOpen} onClose={() => setModalOpen(false)}>
+        <img 
+          src={cs.image} 
+          alt={cs.title} 
+          className="object-contain w-full h-full rounded-xl mx-auto" 
+          style={{ display: 'block' }}
+        />
+      </Modal>
       <div className="space-y-8">
         <div>
           <h2 className="text-2xl font-semibold mb-2 text-indigo-700">Context</h2>

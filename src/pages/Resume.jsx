@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from '../components/ui/button.jsx'
 
 export default function Resume() {
   const pdfHref = '/resume/MattMitchell_2025.pdf'
@@ -29,27 +30,27 @@ export default function Resume() {
         </div>
 
         <div className="mt-4 mb-4 sm:mt-0 flex items-center gap-2 print:hidden" aria-label="Resume actions">
-          <button
+          <Button
             type="button"
             onClick={() => window.print()}
             title="Print"
             aria-label="Print resume"
-            className="inline-flex items-center gap-2 rounded-xl border px-3 py-2 hover:bg-gray-50"
+            className="bg-indigo-600 hover:bg-indigo-700"
           >
-            {/* Printer icon */}
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5"><path d="M6 7V3h12v4H6zm0 10v4h12v-4H6zm-2-1h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2zm2-7h12v3H4V9h2z"/></svg>
-            <span className="text-sm">Print</span>
-          </button>
+            <span>Print</span>
+          </Button>
           <a
             href={pdfHref}
             title="Download PDF"
             aria-label="Download resume PDF"
-            className="inline-flex items-center gap-2 rounded-xl border px-3 py-2 hover:bg-gray-50"
+            className="no-underline"
             download
           >
-            {/* Download icon */}
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5"><path d="M12 3v10.586l3.293-3.293 1.414 1.414L12 17.414l-4.707-4.707 1.414-1.414L11 13.586V3h1zM5 19h14v2H5z"/></svg>
-            <span className="text-sm">PDF</span>
+            <Button className="bg-indigo-600 hover:bg-indigo-700">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5"><path d="M12 3v10.586l3.293-3.293 1.414 1.414L12 17.414l-4.707-4.707 1.414-1.414L11 13.586V3h1zM5 19h14v2H5z"/></svg>
+              <span>PDF</span>
+            </Button>
           </a>
         </div>
 

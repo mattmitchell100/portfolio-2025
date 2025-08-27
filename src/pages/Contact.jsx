@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { LinkedinIcon, EmailIcon } from '../components/ui/icons.jsx'
 
 export default function Contact() {
   const [status, setStatus] = useState({ ok: null, msg: '' })
@@ -51,6 +52,24 @@ export default function Contact() {
       <div className="max-w-xl mx-auto">
         <h1 className="text-3xl font-bold mb-6">Contact</h1>
         <p className="text-gray-600 mb-8">Have a project or question? I’ll get back to you soon.</p>
+        <div className="flex gap-4 mb-8">
+          <a
+            href="https://www.linkedin.com/in/matt-mitchell-3518993"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-indigo-50 text-indigo-700 font-medium hover:bg-indigo-100 transition shadow"
+          >
+            <LinkedinIcon className="w-5 h-5" />
+            LinkedIn
+          </a>
+          <a
+            href="mailto:mattgmitch@gmail.com"
+            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-indigo-50 text-indigo-700 font-medium hover:bg-indigo-100 transition shadow"
+          >
+            <EmailIcon className="w-5 h-5" />
+            Email
+          </a>
+        </div>
 
         <form onSubmit={onSubmit} className="space-y-4">
           {/* Honeypot field (hidden from users) */}

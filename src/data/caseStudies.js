@@ -1,6 +1,7 @@
 import pearsonStoreImg from '../assets/case-studies/pearson-store.png'
 import providerPortalImg from '../assets/case-studies/provider-portal.png'
 import beckDesignSystemImg from '../assets/case-studies/beck-design-system.png'
+import notificationSettings from '../assets/case-studies/notifications-settings.png'
 
 const caseStudies = [
   {
@@ -20,8 +21,9 @@ const caseStudies = [
       'Standardized components across eCommerce platforms',
       'Improved mobile conversion and page speed'
     ],
-    image: pearsonStoreImg,
-    featured: true,
+  image: pearsonStoreImg,
+  featured: true,
+  figma: 'https://www.figma.com/file/pearson-responsive-redesign',
   },
   {
     slug: 'provider-portal-redesign',
@@ -40,28 +42,29 @@ const caseStudies = [
       'Improved accessibility and device support',
       'Reduced implementation time for new clients'
     ],
-    image: providerPortalImg,
-    featured: true,
+  image: providerPortalImg,
+  featured: true,
+  figma: 'https://www.figma.com/file/provider-portal-redesign',
   },
   {
-    slug: 'beck-design-system',
-    title: 'Design System for Internal & Customer Apps',
-    year: '2025',
-    role: 'Lead UX Designer',
-    summary: 'Established and maintained a Figma design system to streamline delivery across teams.',
+    slug: 'notification-settings',
+    title: 'Notification Settings',
+    year: '2023',
+    role: 'Sr UX Designer',
+    summary: 'Designed a unified notification settings experience across web and mobile apps.',
     responsibilities: [
-      'Mentored junior designers and drove consistency',
-      'Set up tokens, components, and usage guidelines',
-      'Partnered with dev leads on UI kit parity'
+      'Refined user flows and interactions',
+      'Designed an improved notification settings UI',
+      'Worked closely with product teams to align on requirements'
     ],
     process: 'Component inventory, theming strategy, contribution model, and documentation with examples.',
     outcomes: [
-      'Higher delivery velocity across squads',
+      'Notifications are received by multiple users',
       'Consistent UX across surfaces',
-      'Clear governance and contribution workflow'
     ],
-    image: beckDesignSystemImg,
-    featured: true,
+  image: notificationSettings,
+  featured: true,
+  figma: 'https://www.figma.com/file/notification-settings',
   },
     {
       slug: 'provider-portal-redesign',
@@ -80,8 +83,9 @@ const caseStudies = [
         'Improved accessibility and device support',
         'Reduced implementation time for new clients'
       ],
-      image: providerPortalImg,
-      featured: false,
+  image: providerPortalImg,
+  featured: false,
+  figma: 'https://www.figma.com/file/provider-portal-redesign',
     },
     {
       slug: 'beck-design-system',
@@ -100,8 +104,9 @@ const caseStudies = [
         'Consistent UX across surfaces',
         'Clear governance and contribution workflow'
       ],
-      image: beckDesignSystemImg,
-      featured: false,
+  image: beckDesignSystemImg,
+  featured: false,
+  figma: 'https://www.figma.com/file/beck-design-system',
     }
 ]
 

@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom'
 import caseStudies from '../data/caseStudies.js'
 import { Card, CardContent } from '../components/ui/card.jsx'
 import Modal from '../components/ui/modal.jsx'
+import Carousel from '../components/ui/carousel.jsx'
 
 export default function CaseStudy() {
   const [modalOpen, setModalOpen] = useState(false)
@@ -29,8 +30,8 @@ export default function CaseStudy() {
         <Link to="/work" className="inline-flex items-center gap-1 text-sm text-indigo-600 hover:underline">← All work</Link>
       </div>
       <Card className="w-full mb-8 shadow">
-        <div className="h-64 rounded-2xl overflow-hidden bg-gray-100 flex items-center justify-center cursor-pointer" onClick={() => setModalOpen(true)}>
-          <img src={cs.image} alt={cs.title} className="object-cover h-full w-full transition-transform duration-200 hover:scale-105" />
+        <div className="cursor-pointer" onClick={() => setModalOpen(true)}>
+          <Carousel items={cs.media || (cs.image ? [{ type: 'image', src: cs.image, alt: cs.title }] : [])} />
         </div>
         <CardContent>
           <h1 className="text-4xl font-bold mb-2">{cs.title}</h1>
@@ -48,11 +49,10 @@ export default function CaseStudy() {
         </CardContent>
       </Card>
       <Modal isOpen={modalOpen} onClose={() => setModalOpen(false)}>
-        <img 
-          src={cs.image} 
-          alt={cs.title} 
-          className="object-contain w-full h-full rounded-xl mx-auto" 
-          style={{ display: 'block' }}
+        <Carousel
+          items={cs.media || (cs.image ? [{ type: 'image', src: cs.image, alt: cs.title }] : [])}
+          className="h-full flex flex-col"
+          autoFocus
         />
       </Modal>
       <div className="space-y-8">

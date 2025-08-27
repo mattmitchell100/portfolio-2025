@@ -23,6 +23,12 @@ const caseStudies = [
       'Improved mobile conversion and page speed'
     ],
   image: pearsonStoreImg,
+  // Optional richer media gallery overriding single image when present
+  media: [
+    { type: 'image', src: pearsonStoreImg, alt: 'Pearson responsive redesign storefront' },
+    { type: 'image', src: providerPortalImg, alt: 'Related component library example' },
+    { type: 'image', src: beckDesignSystemImg, alt: 'Design system token snapshot' }
+  ],
   featured: true,
   figma: 'https://www.figma.com/file/pearson-responsive-redesign',
   },
@@ -44,6 +50,10 @@ const caseStudies = [
       'Reduced implementation time for new clients'
     ],
   image: providerPortalImg,
+  media: [
+    { type: 'image', src: providerPortalImg, alt: 'Provider portal dashboard' },
+    { type: 'image', src: notificationSettings, alt: 'Notification settings pattern' }
+  ],
   featured: false,
   figma: 'https://www.figma.com/file/provider-portal-redesign',
   },
@@ -64,6 +74,9 @@ const caseStudies = [
       'Consistent UX across surfaces',
     ],
   image: notificationSettings,
+  media: [
+    { type: 'image', src: notificationSettings, alt: 'Notification settings UI' }
+  ],
   featured: true,
   figma: 'https://www.figma.com/file/notification-settings',
   },
@@ -84,6 +97,9 @@ const caseStudies = [
         'Less time spent with workarounds, more time for core tasks'
       ],
   image: mobileUX,
+  media: [
+    { type: 'image', src: mobileUX, alt: 'Mobile UX redesign screen' }
+  ],
   featured: true,
   figma: 'https://www.figma.com/file/provider-portal-redesign',
     }

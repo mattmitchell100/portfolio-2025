@@ -17,7 +17,7 @@ export default function About() {
         </p>
         <p className="text-lg text-gray-700 mb-8">
           {/* Over the years, I’ve honed a design approach that’s equal parts user-centered research and iterative prototyping. I thrive on collaboration, whether it’s with cross-functional teams or directly with users, to uncover insights that drive impactful design solutions. */}
-          I love digging into complex problems, untangling them, and finding elegant, intuitive solutions. Over the years I’ve worked across industries, from education and healthcare to finance and agriculture, and each challenge has reinforced one simple truth: great design happens when you listen first.
+          I love digging into complex problems, untangling them, and finding elegant, intuitive solutions. Over the years I’ve worked across industries, from education and healthcare to finance and agriculture, and each challenge has always seemed to reinforced the idea that great design is rooted in empathy and a deep understanding of what the user needs.
         </p>
         <p className="text-lg text-gray-700 mb-8">
           Outside of work, I’m usually biking or exploring new tech. Whether on the screen or off, I’m always curious, always learning, and always chasing the next way to make something just a little bit better.

@@ -2,6 +2,7 @@ import pearsonStoreImg from '../assets/case-studies/pearson-store.png'
 import providerPortalImg from '../assets/case-studies/provider-portal.png'
 import beckDesignSystemImg from '../assets/case-studies/beck-design-system.png'
 import notificationSettings from '../assets/case-studies/notifications-settings.png'
+import mobileUX from '../assets/case-studies/mobile-ux.png'
 
 const caseStudies = [
   {
@@ -43,7 +44,7 @@ const caseStudies = [
       'Reduced implementation time for new clients'
     ],
   image: providerPortalImg,
-  featured: true,
+  featured: false,
   figma: 'https://www.figma.com/file/provider-portal-redesign',
   },
   {
@@ -67,46 +68,24 @@ const caseStudies = [
   figma: 'https://www.figma.com/file/notification-settings',
   },
     {
-      slug: 'provider-portal-redesign',
-      title: 'Healthcare Provider Portal Redesign',
-      year: '2017',
-      role: 'UI Designer & Front-End Developer',
-      summary: 'First fully-responsive member portal and redesigned provider experience.',
-      responsibilities: [
-        'Defined requirements with PM and stakeholders',
-        'Built responsive layouts with accessibility baked in',
-        'Implemented client-side validation for Medicare registration'
-      ],
-      process: 'Stakeholder workshops, wireframes, design specs, and production-ready CSS/JS with accessibility checks.',
-      outcomes: [
-        'Faster task completion for providers',
-        'Improved accessibility and device support',
-        'Reduced implementation time for new clients'
-      ],
-  image: providerPortalImg,
-  featured: false,
-  figma: 'https://www.figma.com/file/provider-portal-redesign',
-    },
-    {
-      slug: 'beck-design-system',
-      title: 'Design System for Internal & Customer Apps',
+      slug: 'FS-mobile-ux',
+      title: 'Mobile UX Redesign',
       year: '2025',
       role: 'Lead UX Designer',
-      summary: 'Established and maintained a Figma design system to streamline delivery across teams.',
+      summary: 'Mobile UX redesign to enhance user experience on smartphones and tablets.',
       responsibilities: [
-        'Mentored junior designers and drove consistency',
-        'Set up tokens, components, and usage guidelines',
-        'Partnered with dev leads on UI kit parity'
+        'Developed detailed user flows and plan of action',
+        'User Experience audit of current mobile app',
+        'Conducted usability testing sessions'
       ],
-      process: 'Component inventory, theming strategy, contribution model, and documentation with examples.',
+      process: 'Wireframes, prototypes, usability testing, and iterative design reviews.',
       outcomes: [
-        'Higher delivery velocity across squads',
-        'Consistent UX across surfaces',
-        'Clear governance and contribution workflow'
+        'Customers are able to use the app more effectively',
+        'Less time spent with workarounds, more time for core tasks'
       ],
-  image: beckDesignSystemImg,
-  featured: false,
-  figma: 'https://www.figma.com/file/beck-design-system',
+  image: mobileUX,
+  featured: true,
+  figma: 'https://www.figma.com/file/provider-portal-redesign',
     }
 ]
 

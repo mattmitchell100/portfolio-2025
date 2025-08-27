@@ -69,6 +69,9 @@ export default function Home() {
           <p className="text-lg text-gray-700 leading-relaxed">
             I design intuitive, accessible digital products that solve real problems. I balance creative vision with technical execution and have led work across e‑commerce, healthcare, and agriculture.
           </p>
+          <div className="flex flex-wrap gap-4 justify-center mt-6">
+            <Link to="/about" className="rounded-full bg-indigo-600 text-white text-sm font-medium px-5 py-2 hover:bg-indigo-700 transition">My Story</Link>
+          </div>
         </div>
       </section>
     </div>

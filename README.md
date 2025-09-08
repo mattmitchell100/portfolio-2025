@@ -10,19 +10,27 @@ A minimal starter that matches the mockup you discussed. Includes:
 ## Quickstart
 
 ```bash
-# 1) Install deps
+# Install deps
 npm install
 
-# 2) Start dev server
-npm run dev
+# Run frontend + serverless API together (recommended)
+npm run dev:full
 
-# 3) Open new terminal, start API
-npx vercel dev
+# Or run separately in two terminals
+npm run dev      # Vite (frontend on :5173)
+npm run api      # Vercel functions (API on :3000)
 
-# 4) Build for production
+# Production build & local preview
 npm run build
 npm run preview
 ```
+
+### Scripts
+- `dev` – Vite dev server only.
+- `api` – Runs `vercel dev` on port 3000 (forced with `--listen 3000`).
+- `dev:full` – Runs both in parallel with colored output (uses `concurrently`).
+
+The Vite dev server proxies `/api/*` to `http://localhost:3000` (see `vite.config.js`) so the frontend can fetch `/api/contact` without changing code between local and deployed environments.
 
 You can customize `src/App.jsx` and replace placeholder project cards with real case studies.
 

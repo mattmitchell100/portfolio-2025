@@ -1,9 +1,45 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { LinkedinIcon, EmailIcon } from '../components/ui/icons.jsx'
 
 export default function Contact() {
   const [status, setStatus] = useState({ ok: null, msg: '' })
   const [submitting, setSubmitting] = useState(false)
+  const [captchaToken, setCaptchaToken] = useState('')
+  const turnstileRef = useRef(null)
+  const widgetIdRef = useRef(null)
+  const renderedRef = useRef(false)
+
+  useEffect(() => {
+    let tries = 0
+    const maxTries = 50 // ~5s
+    const tryRender = () => {
+      if (renderedRef.current) return
+      const ts = window.turnstile
+      if (ts && turnstileRef.current) {
+        try {
+          // Skip if already auto-rendered
+          const already = turnstileRef.current.querySelector('iframe') || turnstileRef.current.getAttribute('data-widget-id')
+          if (already) {
+            renderedRef.current = true
+            return
+          }
+          widgetIdRef.current = ts.render(turnstileRef.current, {
+            sitekey: import.meta.env.VITE_TURNSTILE_SITE_KEY,
+            theme: 'light',
+            size: 'normal',
+            action: 'contact',
+            callback: (token) => setCaptchaToken(token),
+            'expired-callback': () => setCaptchaToken(''),
+            'timeout-callback': () => setCaptchaToken('')
+          })
+          renderedRef.current = true
+          return
+        } catch { /* ignore and retry */ }
+      }
+      if (tries++ < maxTries) setTimeout(tryRender, 100)
+    }
+    tryRender()
+  }, [])
 
   async function onSubmit(e) {
     e.preventDefault()
@@ -25,8 +61,8 @@ export default function Contact() {
           name: fd.get('name'),
           email: fd.get('email'),
           message: fd.get('message'),
-          // Pass Turnstile token if present (auto-added hidden field name)
-          token: fd.get('cf-turnstile-response') || undefined,
+          // Prefer explicit token, fallback to auto-added hidden field
+          token: captchaToken || fd.get('cf-turnstile-response') || undefined,
         })
       })
 
@@ -40,6 +76,8 @@ export default function Contact() {
 
       setStatus({ ok: true, msg: data.message || 'Thanks — your message was sent.' })
       form.reset()
+      setCaptchaToken('')
+      try { window.turnstile?.reset(widgetIdRef.current) } catch { /* no-op */ }
     } catch (err) {
       setStatus({ ok: false, msg: 'Network error. Check your connection or API route.' })
     } finally {
@@ -85,7 +123,7 @@ export default function Contact() {
           </div>
 
           <div>
-            <label className="block text-sm font-medium mb-1">Email</label>
+            <label className="block text.sm font-medium mb-1">Email</label>
             <input name="email" type="email" required className="w-full border rounded-lg px-3 py-2 bg-white dark:bg-slate-800 border-gray-300 dark:border-slate-600 text-slate-900 dark:text-slate-100" />
           </div>
 
@@ -94,11 +132,15 @@ export default function Contact() {
             <textarea name="message" rows="5" required className="w-full border rounded-lg px-3 py-2 bg-white dark:bg-slate-800 border-gray-300 dark:border-slate-600 text-slate-900 dark:text-slate-100" />
           </div>
 
-          <div 
-            className="cf-turnstile" 
+          {/* Hidden field bound to explicit Turnstile callback */}
+          <input type="hidden" name="cf-turnstile-response" value={captchaToken} readOnly />
+
+          <div
+            className="cf-turnstile"
+            ref={turnstileRef}
             data-sitekey={import.meta.env.VITE_TURNSTILE_SITE_KEY}
-            data-theme="light"   // options: "light" (default), "dark", "auto"
-            data-size="normal"   // options: "normal", "compact"
+            data-theme="light"
+            data-size="normal"
             data-action="contact">
           </div>
 

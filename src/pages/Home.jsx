@@ -25,7 +25,7 @@ export default function Home() {
             </Button>
           </Link>
           <Link to="/contact">
-            <Button className="bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-300 dark:hover:bg-slate-700 shadow text-white dark:text-white">
+            <Button className="bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-400 dark:hover:bg-slate-700 shadow text-white dark:text-white">
               <Mail size={18}/> Contact Me
             </Button>
           </Link>

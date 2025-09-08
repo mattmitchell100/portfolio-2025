@@ -35,7 +35,6 @@ export default function Resume() {
             onClick={() => window.print()}
             title="Print"
             aria-label="Print resume"
-            className="bg-indigo-600 hover:bg-indigo-700"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5"><path d="M6 7V3h12v4H6zm0 10v4h12v-4H6zm-2-1h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2zm2-7h12v3H4V9h2z"/></svg>
             <span>Print</span>
@@ -47,7 +46,7 @@ export default function Resume() {
             className="no-underline"
             download
           >
-            <Button className="bg-indigo-600 hover:bg-indigo-700">
+            <Button >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5"><path d="M12 3v10.586l3.293-3.293 1.414 1.414L12 17.414l-4.707-4.707 1.414-1.414L11 13.586V3h1zM5 19h14v2H5z"/></svg>
               <span>PDF</span>
             </Button>

@@ -95,14 +95,14 @@ export default function Contact() {
             href="https://www.linkedin.com/in/matt-mitchell-3518993"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-indigo-50 text-indigo-700 dark:bg-indigo-600/20 dark:text-indigo-300 font-medium hover:bg-indigo-100 dark:hover:bg-indigo-600/30 transition shadow"
+            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-gray-100 text-gray-800 dark:bg-slate-700/60 dark:text-slate-100 font-medium hover:bg-gray-200 dark:hover:bg-slate-600 transition shadow"
           >
             <LinkedinIcon className="w-5 h-5" />
             LinkedIn
           </a>
           <a
             href="mailto:mattgmitch@gmail.com"
-            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-indigo-50 text-indigo-700 dark:bg-indigo-600/20 dark:text-indigo-300 font-medium hover:bg-indigo-100 dark:hover:bg-indigo-600/30 transition shadow"
+            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-gray-100 text-gray-800 dark:bg-slate-700/60 dark:text-slate-100 font-medium hover:bg-gray-200 dark:hover:bg-slate-600 transition shadow"
           >
             <EmailIcon className="w-5 h-5" />
             Email
@@ -144,7 +144,7 @@ export default function Contact() {
             data-action="contact">
           </div>
 
-          <button type="submit" disabled={submitting} className={`rounded-2xl px-4 py-2 text-white hover:bg-indigo-700 dark:hover:bg-indigo-500 ${submitting ? 'bg-indigo-400 dark:bg-indigo-400/60 cursor-not-allowed' : 'bg-indigo-600 dark:bg-indigo-500'}`}>
+          <button type="submit" disabled={submitting} className={`rounded-xl px-4 py-2 text-white ${submitting ? 'bg-brand-orange-300 dark:bg-brand-orange-300/60 cursor-not-allowed' : 'bg-brand-orange-500 hover:bg-brand-orange-600 dark:bg-brand-orange-500 dark:hover:bg-brand-orange-600'}`}>
             {submitting ? 'Sending…' : 'Send'}
           </button>
 

@@ -106,7 +106,7 @@ export default function Carousel({ items = [], className = '', autoFocus = false
               <button
                 key={i}
                 onClick={() => goTo(i)}
-                className={`h-14 w-20 rounded-lg overflow-hidden border ${i === index ? 'ring-2 ring-indigo-500 border-indigo-500' : 'border-gray-200 opacity-70 hover:opacity-100'}`}
+                className={`h-14 w-20 rounded-lg overflow-hidden border ${i === index ? 'ring-2 ring-brand-orange-500 border-brand-orange-500' : 'border-gray-200 opacity-70 hover:opacity-100'}`}
                 aria-label={`Go to item ${i + 1}`}
               >
                 {item.type === 'video' ? (

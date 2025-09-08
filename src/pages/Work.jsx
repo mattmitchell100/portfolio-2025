@@ -23,21 +23,21 @@ export default function Work() {
             <div className="p-5">
               <h2 className="text-lg font-semibold group-hover:underline text-slate-900 dark:text-slate-100">{cs.title}</h2>
               <p className="text-sm text-gray-600 dark:text-slate-400 mt-2">{cs.summary}</p>
-              <div className="mt-3 text-sm text-indigo-600 dark:text-indigo-400">Read case study →</div>
+              <div className="mt-3 text-sm text-brand-orange-600 dark:text-brand-orange-400">Read case study →</div>
             </div>
           </Link>
         ))}
       </div>
 
       {/* <div className="flex flex-col items-start md:items-center justify-start md:justify-center text-left md:text-center rounded-2xl border border-dashed bg-white/60 px-8 py-12">
-        <div className="text-sm mb-3 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 font-medium">🚧 In Progress</div>
+        <div className="text-sm mb-3 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-orange-100 text-brand-orange-700 font-medium">🚧 In Progress</div>
         <h2 className="text-2xl font-semibold mb-4 max-w-2xl">I&apos;m curating fresh, deeper case studies.</h2>
         <p className="text-gray-600 max-w-xl leading-relaxed mb-6">
           I&apos;m rewriting and expanding this section with more recent design artifacts and an overall more detailed display of professional experience. Check back soon or reach out if you&apos;d like an early walkthrough.
         </p>
         <div className="flex gap-4">
-          <Link to="/contact" className="rounded-full bg-indigo-600 text-white text-sm font-medium px-4 py-2 hover:bg-indigo-700 transition">Contact Me</Link>
-          <Link to="/resume" className="rounded-full border text-sm font-medium px-5 py-2 hover:bg-gray-100 transition">View Resume</Link>
+          <Link to="/contact" className="rounded-xl bg-brand-orange-500 text-white text-sm font-medium px-4 py-2 hover:bg-brand-orange-600 transition">Contact Me</Link>
+          <Link to="/resume" className="rounded-xl border text-sm font-medium px-5 py-2 hover:bg-gray-100 transition">View Resume</Link>
         </div>
       </div> */}
     </section>

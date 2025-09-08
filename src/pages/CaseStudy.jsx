@@ -17,7 +17,7 @@ export default function CaseStudy() {
           <CardContent className="text-center">
             <h1 className="text-3xl font-bold mb-2">Case study not found</h1>
             <p className="mb-4 text-gray-600">Sorry, we couldn't find that case study.</p>
-            <Link to="/work" className="inline-block rounded-xl px-4 py-2 bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition">Back to work</Link>
+            <Link to="/work" className="inline-block rounded-xl px-4 py-2 bg-brand-orange-500 text-white font-medium hover:bg-brand-orange-600 transition">Back to work</Link>
           </CardContent>
         </Card>
       </section>
@@ -27,7 +27,7 @@ export default function CaseStudy() {
   return (
   <section className="py-24 px-6 max-w-3xl mx-auto text-slate-900 dark:text-slate-100">
       <div className="mb-8">
-        <Link to="/work" className="inline-flex items-center gap-1 text-sm text-indigo-600 hover:underline">← All work</Link>
+  <Link to="/work" className="inline-flex items-center gap-1 text-sm text-brand-orange-600 hover:underline">← All work</Link>
       </div>
   <Card className="w-full mb-8 shadow">
         <div className="cursor-pointer" onClick={() => setModalOpen(true)}>
@@ -41,7 +41,7 @@ export default function CaseStudy() {
               href={cs.figma}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-4 px-4 py-2 bg-indigo-50 text-indigo-700 dark:bg-indigo-600/20 dark:text-indigo-300 rounded-lg font-medium hover:bg-indigo-100 dark:hover:bg-indigo-600/30 transition"
+              className="inline-block mt-4 px-4 py-2 bg-gray-100 text-gray-800 dark:bg-slate-700/60 dark:text-slate-100 rounded-xl font-medium hover:bg-gray-200 dark:hover:bg-slate-600 transition"
             >
               View Figma File
             </a>
@@ -57,21 +57,21 @@ export default function CaseStudy() {
       </Modal>
       <div className="space-y-8">
         <div>
-          <h2 className="text-2xl font-semibold mb-2 text-indigo-700 dark:text-indigo-400">Context</h2>
+          <h2 className="text-2xl font-semibold mb-2 text-brand-orange-600 dark:text-brand-orange-400">Context</h2>
           <p className="text-gray-700 dark:text-slate-300 leading-relaxed">{cs.summary}</p>
         </div>
         <div>
-          <h2 className="text-2xl font-semibold mb-2 text-indigo-700 dark:text-indigo-400">My Role</h2>
+          <h2 className="text-2xl font-semibold mb-2 text-brand-orange-600 dark:text-brand-orange-400">My Role</h2>
           <ul className="list-disc pl-6 text-gray-700 dark:text-slate-300">
             {cs.responsibilities.map((r, i) => <li key={i}>{r}</li>)}
           </ul>
         </div>
         <div>
-          <h2 className="text-2xl font-semibold mb-2 text-indigo-700 dark:text-indigo-400">Process</h2>
+          <h2 className="text-2xl font-semibold mb-2 text-brand-orange-600 dark:text-brand-orange-400">Process</h2>
           <p className="text-gray-700 dark:text-slate-300 leading-relaxed">{cs.process}</p>
         </div>
         <div>
-          <h2 className="text-2xl font-semibold mb-2 text-indigo-700 dark:text-indigo-400">Outcome</h2>
+          <h2 className="text-2xl font-semibold mb-2 text-brand-orange-600 dark:text-brand-orange-400">Outcome</h2>
           <ul className="list-disc pl-6 text-gray-700 dark:text-slate-300">
             {cs.outcomes.map((o, i) => <li key={i}>{o}</li>)}
           </ul>

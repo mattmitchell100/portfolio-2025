@@ -3,3 +3,4 @@
 .vercel
 /dist
 .env
+/.idea
